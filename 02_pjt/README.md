@@ -33,6 +33,11 @@ if __name__ == '__main__':
     print(popular_count())
     # 20
 ```
+- requests
+    - requests 모듈을 활용하여 url을 통해 데이터를 받아 올 수 있다
+    - URL에는 기본 주소를 저장하고 파라미터로 들어가는 값들은 따로 딕셔너리에 저장하고 get() 함수를 통해 넘겨준다
+    - url을 통한 접근은 api_key가 필요하다 -> 각 홈페이지에서 api_key를 발급받는 방법 확인 필요 
+    - 어떤 파라미터가 들어가고 어떤 파라미터가 필수인지 꼭 확인하자
 
 
 ## problem_b
@@ -155,6 +160,10 @@ if __name__ == '__main__':
 
 ```
 
+- lambda를 활용한 sort()
+ - sort()함수를 사용할때 key값을 기준으로 정렬한다.
+ - key값에 lambda함수를 사용하면 다양한 값을 기준으로 sort 가능하다. -> ex) key= lambda x:x['key']   or key= lambda x : x[idx]
+
 ## problem_d
 
 ```python
@@ -222,6 +231,9 @@ if __name__ == '__main__':
 
 
 ```
+
+- BASEURL
+ - url을 통한 접근은 변하지 않는 주소가 있다. 그 주소를 BASEURL에 저장해놓고 그 뒤는 path라는 변수에 저장해서 path값을 변경해가며 깂을 불러온다
 
 ## problem_e
 
