@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1 class ='row justify-content-center'>Detail</h1>
+  <hr>
+  <div class = 'row justify-content-center'>
+    <div class="card aling-self-cneter" style="width: 18rem;">
+      <img src={{movie.poster_url}} class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">Audience : {{movie.audience}}</p>
+        <p class="card-text">Release_date : {{movie.release_date}}</p>
+        <p class="card-text">Genre : {{movie.genre}}</p>
+        <p class="card-text">Score : {{movie.score}}</p>
+        <p class="card-text">{{movie.description}}</p>
+        <a href="{% url 'movies:update' movie.pk %}"  class="btn btn-primary">UPDATE</a>
+        <a href="{% url 'movies:delete' movie.pk %}"  class="btn btn-danger">DELETE</a>
+      </div>
+    </div>
+
+  </div>
+  <a href="{% url 'movies:index' %}" class="btn btn-warning">BACK</a>
+
+
+
+  
+  
+
+{% endblock content %}
